@@ -1,10 +1,25 @@
 {
   "cars": [
     {
-      "cars": "BMW",
+      "cars": "Mercedes",
       "describtion": "good",
-      "image": "123.img",
-      "abs": "",
+      "image": "image",
+      "abs": true,
+      "shusha": "",
+      "luqi": "",
+      "bluetooth": true,
+      "signalizacia": "",
+      "parkingkontroli": "",
+      "navigacia": "",
+      "bort": true,
+      "multisache": true,
+      "id": 1
+    },
+    {
+      "cars": "Audi",
+      "describtion": "good",
+      "image": "img",
+      "abs": true,
       "shusha": "",
       "luqi": true,
       "bluetooth": "",
@@ -12,25 +27,38 @@
       "parkingkontroli": "",
       "navigacia": true,
       "bort": "",
-      "multisache": "",
-      "id": 1
+      "multisache": true,
+      "id": 2
     },
     {
-      "cars": "Mercedes",
+      "cars": "BMW",
+      "describtion": "good",
+      "image": "img",
+      "abs": null,
+      "shusha": null,
+      "luqi": null,
+      "bluetooth": null,
+      "signalizacia": null,
+      "parkingkontroli": null,
+      "navigacia": null,
+      "bort": null,
+      "multisache": true,
+      "id": 3
+    },
+    {
+      "cars": "Mitsubishi",
       "describtion": "bad",
-      "image": "",
-      "abs": "",
-      "shusha": "",
-      "luqi": "",
+      "image": "img",
+      "abs": true,
+      "shusha": null,
+      "luqi": true,
       "bluetooth": true,
-      "signalizacia": "",
-      "parkingkontroli": "",
+      "signalizacia": null,
+      "parkingkontroli": null,
       "navigacia": true,
-      "bort": "",
-      "multisache": "",
-      "id": 2
+      "bort": null,
+      "multisache": true,
+      "id": 4
     }
-    
-   
   ]
 }

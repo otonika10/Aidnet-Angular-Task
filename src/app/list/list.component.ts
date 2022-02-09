@@ -10,6 +10,8 @@ import { CarsService } from '../cars.service';
 })
 export class ListComponent implements OnInit {
   cond: 'true' | 'false' = 'false'
+  current: 'add' | 'table' = 'table';
+  j:any = 0
   cars$:any = this.cars.getAll()
   Cars: any = ['Audi', 'BMW', 'Mercedes', 'Toyota' ,'Mitsubishi']
   users$:any = this.cars.getAll2()
@@ -41,8 +43,13 @@ export class ListComponent implements OnInit {
     
     let data:any = this.form.value
     this.cars.update(id,data).subscribe()
+    this.form.reset()
   }
-
+  condintion(id:number){
+    this.cond = 'true'
+    this.current = 'add'
+    this.j = id
+  }
   constructor(private cars:CarsService,private http:HttpClient) {}
 
 
