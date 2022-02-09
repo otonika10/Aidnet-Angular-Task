@@ -1,0 +1,69 @@
+
+<a  [routerLink]="['/form']"><button> Form</button></a>
+<a  [routerLink]="['/byid']"><button>Car Search</button></a>
+    
+  
+<ul  style="list-style: none;">
+    <li *ngFor="let e of cars$  | async ">
+      {{"Car: "+e.cars+"; "}} 
+      {{"describtion: "+e.describtion+";  "}} 
+      {{"img link: "+e.image+";  "}} <br>
+      {{"ABS: "+e.abs+";  "}} <br>
+      {{"ელექტრო შუშა: "+e.shusha+";  "}} <br>
+      {{"ლუქი: "+e.luqi+";  "}} <br>
+      {{"bluetooth: "+e.bluetooth+";  "}} <br>
+      {{"სიგნალიზაცია: "+e.signalizacia+";  "}} <br>
+      {{"პარკინგკონტროლი: "+e.parkingkontroli+";  "}} <br>
+      {{"ნავიგაცია: "+e.navigacia+";  "}} <br>
+      {{"ბორდკომპიუტერი: "+e.bort+";  "}} <br>
+      {{"მულტისაჭე: "+e.multisache+";  "}} <br>
+      <button (click)="r(e.id)">Remove</button>
+      <button (click)="cond='true'">Update</button>
+      <form *ngIf="cond=='true'" class="container form" autocomplete="off" [formGroup]="form" >
+        
+        <select   formControlName="cars">
+            <option  *ngFor="let i of Cars" >{{i}}</option>
+            
+        </select>
+        <div class="item label">
+            describtion:
+          </div>
+          <div class="item input">
+            <input type="text"  formControlName="describtion"/>
+          </div>
+          <div class="item label">
+            car_image:
+          </div>
+          <div class="item input">
+            <input type="text"  formControlName="car_image"/>
+          </div>
+          <div class="item input">
+            ABS: <input type="checkbox" formControlName="abs" />
+          </div>
+          <div class="item input">
+            ელექტრო შუშა: <input type="checkbox" formControlName="shusha" />
+          </div>
+          <div class="item input">
+            ლუქი: <input type="checkbox"  formControlName="luqi"/>
+          </div>
+          <div class="item input">
+            bluetooth: <input type="checkbox"  formControlName="bluetooth"/>
+          </div>
+          <div class="item input">
+            სიგნალიზაცია: <input type="checkbox"  formControlName="signalizacia"/>
+          </div>
+          <div class="item input">
+            ნავიგაცია: <input type="checkbox"  formControlName="navigacia"/>
+          </div>
+          <div class="item input">
+            ბორტკომფორტი: <input type="checkbox"  formControlName="bort"/>
+          </div>
+          <div class="item input">
+            მულტისაჭე: <input type="checkbox"  formControlName="multisache"/>
+          </div>
+        <h3 class="item input"></h3>
+      <button (click)="u(e.id)">Save</button>
+      </form>
+    </li>
+    
+</ul>

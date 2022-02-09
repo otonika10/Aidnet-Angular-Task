@@ -1,0 +1,50 @@
+
+<a  [routerLink]="['/list']"><button>Cars List</button></a>
+<a  [routerLink]="['/byid']"><button>Search cars</button></a>
+<form class="container form" autocomplete="off" [formGroup]="form">
+    <select formControlName="cars">
+        <option  *ngFor="let i of Cars" >{{i}}</option>
+        
+    </select>
+    <div class="item label">
+        describtion:
+      </div>
+      <div class="item input">
+        <input type="text"  formControlName="describtion"/>
+      </div>
+      <div class="item label">
+        image:
+      </div>
+      <div class="item input">
+        <input type="text"  formControlName="image"/>
+      </div>
+      
+      
+        
+        
+          <div class="item input">
+            ABS: <input type="checkbox" formControlName="abs" />
+          </div>
+          <div class="item input">
+            ელექტრო შუშა: <input type="checkbox" formControlName="shusha" />
+          </div>
+          <div class="item input">
+            ლუქი: <input type="checkbox"  formControlName="luqi"/>
+          </div>
+          <div class="item input">
+            bluetooth: <input type="checkbox"  formControlName="bluetooth"/>
+          </div>
+          <div class="item input">
+            სიგნალიზაცია: <input type="checkbox"  formControlName="signalizacia"/>
+          </div>
+          <div class="item input">
+            ნავიგაცია: <input type="checkbox"  formControlName="navigacia"/>
+          </div>
+          <div class="item input">
+            ბორტკომფორტი: <input type="checkbox"  formControlName="bort"/>
+          </div>
+          <div class="item input">
+            მულტისაჭე: <input type="checkbox"  formControlName="multisache"/>
+          </div>
+    <h3 class="item input"></h3>
+    <button (click)="bt()">Add Car</button>

@@ -1,0 +1,31 @@
+<a  [routerLink]="['/list']"><button> Car List</button></a>
+<a  [routerLink]="['/byid']"><button> Car Search</button></a>
+
+    
+  
+<form class="container form" >
+  <h1>Get Car</h1>
+  <div class="item label">
+    Id:
+  </div>
+  <div class="item input">
+    <input type="number"   (input)="onInput($event)"/>
+
+  </div>
+<ul style="list-style: none;">
+  <li *ngFor="let e of p$ | async">
+    {{"Car: "+e.cars+"; "}} 
+      {{"describtion: "+e.describtion+";  "}} 
+      {{"img link: "+e.image+";  "}} <br>
+      {{"ABS: "+e.abs+";  "}} <br>
+      {{"ელექტრო შუშა: "+e.shusha+";  "}} <br>
+      {{"ლუქი: "+e.luqi+";  "}} <br>
+      {{"bluetooth: "+e.bluetooth+";  "}} <br>
+      {{"სიგნალიზაცია: "+e.signalizacia+";  "}} <br>
+      {{"პარკინგკონტროლი: "+e.parkingkontroli+";  "}} <br>
+      {{"ნავიგაცია: "+e.navigacia+";  "}} <br>
+      {{"ბორდკომპიუტერი: "+e.bort+";  "}} <br>
+      {{"მულტისაჭე: "+e.multisache+";  "}} <br>
+  </li>
+</ul>
+</form>

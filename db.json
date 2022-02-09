@@ -1,0 +1,36 @@
+{
+  "cars": [
+    {
+      "cars": "BMW",
+      "describtion": "good",
+      "image": "123.img",
+      "abs": "",
+      "shusha": "",
+      "luqi": true,
+      "bluetooth": "",
+      "signalizacia": "",
+      "parkingkontroli": "",
+      "navigacia": true,
+      "bort": "",
+      "multisache": "",
+      "id": 1
+    },
+    {
+      "cars": "Mercedes",
+      "describtion": "bad",
+      "image": "",
+      "abs": "",
+      "shusha": "",
+      "luqi": "",
+      "bluetooth": true,
+      "signalizacia": "",
+      "parkingkontroli": "",
+      "navigacia": true,
+      "bort": "",
+      "multisache": "",
+      "id": 2
+    }
+    
+   
+  ]
+}
