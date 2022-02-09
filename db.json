@@ -44,21 +44,6 @@
       "bort": null,
       "multisache": true,
       "id": 3
-    },
-    {
-      "cars": "Mitsubishi",
-      "describtion": "bad",
-      "image": "img",
-      "abs": true,
-      "shusha": null,
-      "luqi": true,
-      "bluetooth": true,
-      "signalizacia": null,
-      "parkingkontroli": null,
-      "navigacia": true,
-      "bort": null,
-      "multisache": true,
-      "id": 4
     }
   ]
 }
