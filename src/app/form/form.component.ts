@@ -53,7 +53,7 @@ export class FormComponent implements OnInit {
       this.http.post(`${environment.api}/cars`,data).subscribe()
       this.form.reset()
       console.log(this.form.value);
-      
+      window.confirm('Successfully added')
       }else{
         if(this.form.get('describtion')?.invalid && this.form.get('image')?.invalid){
           alert("Invalid")

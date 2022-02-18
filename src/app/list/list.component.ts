@@ -10,7 +10,10 @@ import { CarsService } from '../cars.service';
 })
 export class ListComponent implements OnInit {
   cond: 'true' | 'false' = 'false'
-  current: 'add' | 'table' = 'table';
+  current: 'save' | 'cancle' = 'cancle';
+  alert1: 'true' | 'false' = 'false'
+  alert2: 'true' | 'false' = 'false'
+  alert:any = 'invalid'
   j:any = 0
   cars$:any = this.cars.getAll()
   Cars: any = ['Audi', 'BMW', 'Mercedes', 'Toyota' ,'Mitsubishi']
@@ -38,16 +41,29 @@ export class ListComponent implements OnInit {
   }
   r(id:number){
     this.cars.remove(id).subscribe()
+    window.location.reload();
   }
   u(id:number){
-    
-    let data:any = this.form.value
-    this.cars.update(id,data).subscribe()
-    this.form.reset()
+    if(this.form.valid){ 
+      let data:any = this.form.value
+      this.cars.update(id,data).subscribe()
+      this.form.reset()
+      window.location.reload();
+      window.confirm( 'Car with id: '+id+' Successfully Edited')
+    }else{
+      if(this.form.get('describtion')?.invalid && this.form.get('image')?.invalid){
+        alert("Invalid")
+      }
+      else if(this.form.get('describtion')?.invalid){
+        alert("describtion is not valid")
+      }else if(this.form.get('image')?.invalid){
+        alert("image is not valid")
+      }
+    }
   }
   condintion(id:number){
     this.cond = 'true'
-    this.current = 'add'
+    this.current = 'save'
     this.j = id
   }
   constructor(private cars:CarsService,private http:HttpClient) {}

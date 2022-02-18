@@ -6,7 +6,7 @@
 <ul  style="list-style: none;">
     <li *ngFor="let e of cars$  | async;let k = index ">
         <div *ngIf="j==k">
-        <form *ngIf="current=='add'" class="container form" autocomplete="off" [formGroup]="form" >
+        <form *ngIf="current=='save'" class="container form" autocomplete="off" [formGroup]="form" >
             {{"Update Car Id: #"+ e.id +" Car: "+e.cars}}
             <select   formControlName="cars">
                 <option  *ngFor="let i of Cars" >{{i}}</option>
@@ -16,41 +16,40 @@
                 describtion:
               </div>
               <div class="item input">
-                <input type="text"  formControlName="describtion"/>
+                <input (click)="alert1='true'" type="text"  formControlName="describtion" pattern="[a-zA-Z ]*" />
+              <div *ngIf="alert1=='true'">
+                <div class="alert" *ngIf="this.form.get('describtion')?.invalid">{{alert+" describtion"}}</div>
+              </div>
               </div>
               <div class="item label">
-                car_image:
+                Image:
               </div>
               <div class="item input">
-                <input type="text"  formControlName="image"/>
+                <input (click)="alert2='true'" type="text"  formControlName="image" pattern="(www|http:|https:)+[^\s]+[\w]*"/>
+                <div *ngIf="alert2=='true'">
+                  <div  class="alert" *ngIf="this.form.get('image')?.invalid">{{alert+" image"}}</div>
+                </div>
               </div>
               <div class="item input">
                 ABS: <input type="checkbox" formControlName="abs" />
-              </div>
-              <div class="item input">
                 ელექტრო შუშა: <input type="checkbox" formControlName="shusha" />
-              </div>
-              <div class="item input">
                 ლუქი: <input type="checkbox"  formControlName="luqi"/>
-              </div>
-              <div class="item input">
                 bluetooth: <input type="checkbox"  formControlName="bluetooth"/>
+                პარკინგკონტროლი: <input type="checkbox"  formControlName="parkingkontroli"/>
+                
               </div>
+              
+              
               <div class="item input">
                 სიგნალიზაცია: <input type="checkbox"  formControlName="signalizacia"/>
-              </div>
-              <div class="item input">
                 ნავიგაცია: <input type="checkbox"  formControlName="navigacia"/>
-              </div>
-              <div class="item input">
                 ბორტკომფორტი: <input type="checkbox"  formControlName="bort"/>
-              </div>
-              <div class="item input">
                 მულტისაჭე: <input type="checkbox"  formControlName="multisache"/>
               </div>
+              
             <h3 class="item input"></h3>
           <button (click)="u(e.id)">Save</button>
-            
+          <button (click)="current='cancle'">Cancle</button>
           </form>
           </div>
     </li>

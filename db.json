@@ -2,16 +2,16 @@
   "cars": [
     {
       "cars": "Mercedes",
-      "describtion": "good",
-      "image": "image",
+      "describtion": "bad",
+      "image": "www.ajkdhlja;fjaklfhajkslfhjhgafaklflalfjjhfhklakl;gjbjfJBKFNJKKLSGBJKFJKLngvklnkl;jfk;lF.COM",
       "abs": true,
       "shusha": "",
       "luqi": "",
-      "bluetooth": true,
-      "signalizacia": "",
-      "parkingkontroli": "",
+      "bluetooth": "",
+      "signalizacia": true,
+      "parkingkontroli": true,
       "navigacia": "",
-      "bort": true,
+      "bort": "",
       "multisache": true,
       "id": 1
     },
@@ -104,6 +104,21 @@
       "bort": null,
       "multisache": null,
       "id": 7
+    },
+    {
+      "cars": "Mitsubishi",
+      "describtion": "good",
+      "image": "www.google.com",
+      "abs": "",
+      "shusha": "",
+      "luqi": "",
+      "bluetooth": "",
+      "signalizacia": "",
+      "parkingkontroli": "",
+      "navigacia": "",
+      "bort": "",
+      "multisache": true,
+      "id": 9
     }
   ]
 }
