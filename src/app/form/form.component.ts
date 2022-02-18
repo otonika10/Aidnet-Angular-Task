@@ -13,7 +13,9 @@ import { CarsService } from '../cars.service';
 export class FormComponent implements OnInit {
   
   Cars: any = ['Audi', 'BMW', 'Mercedes', 'Toyota' ,'Mitsubishi']
-  
+  alert:any = 'invalid'
+  alert1: 'true' | 'false' = 'false'
+  alert2: 'true' | 'false' = 'false'
   employees$:any = this.cars.getAll()
   
   productId:number=4;
@@ -52,6 +54,15 @@ export class FormComponent implements OnInit {
       this.form.reset()
       console.log(this.form.value);
       
+      }else{
+        if(this.form.get('describtion')?.invalid && this.form.get('image')?.invalid){
+          alert("Invalid")
+        }
+        else if(this.form.get('describtion')?.invalid){
+          alert("describtion is not valid")
+        }else if(this.form.get('image')?.invalid){
+          alert("image is not valid")
+        }
       }
   }
 

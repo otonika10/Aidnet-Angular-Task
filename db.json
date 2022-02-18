@@ -44,6 +44,66 @@
       "bort": null,
       "multisache": true,
       "id": 3
+    },
+    {
+      "cars": "Mercedes",
+      "describtion": "good",
+      "image": "img",
+      "abs": "",
+      "shusha": "",
+      "luqi": true,
+      "bluetooth": "",
+      "signalizacia": "",
+      "parkingkontroli": "",
+      "navigacia": "",
+      "bort": true,
+      "multisache": "",
+      "id": 4
+    },
+    {
+      "cars": "Mercedes",
+      "describtion": "good",
+      "image": "img",
+      "abs": true,
+      "shusha": "",
+      "luqi": "",
+      "bluetooth": "",
+      "signalizacia": "",
+      "parkingkontroli": "",
+      "navigacia": true,
+      "bort": "",
+      "multisache": "",
+      "id": 5
+    },
+    {
+      "cars": "BMW",
+      "describtion": "good",
+      "image": "www.google.com",
+      "abs": "",
+      "shusha": "",
+      "luqi": "",
+      "bluetooth": "",
+      "signalizacia": "",
+      "parkingkontroli": "",
+      "navigacia": true,
+      "bort": "",
+      "multisache": "",
+      "id": 6
+    },
+    {
+      "cars": "Mercedes",
+      "describtion": "bad",
+      "image": "https://cdn.motor1.com/images/mgl/mrz1e/s1/coolest-cars-feature.webp",
+      "abs": null,
+      "shusha": null,
+      "luqi": null,
+      "bluetooth": true,
+      "signalizacia": null,
+      "parkingkontroli": null,
+      "navigacia": null,
+      "bort": null,
+      "multisache": null,
+      "id": 7
     }
   ]
 }
