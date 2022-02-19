@@ -10,7 +10,7 @@
         describtion:
       </div>
       <div class="item input">
-        <input (click)="alert1='true'" type="text"  formControlName="describtion" pattern="[a-zA-Z ]*" />
+        <input (click)="alert1='true'" type="text" placeholder="describtion"  formControlName="describtion" pattern="[a-zA-Z ]*" />
         <div *ngIf="alert1=='true'">
           <div class="alert" *ngIf="this.form.get('describtion')?.invalid">{{alert+" describtion"}}</div>
         </div>
@@ -19,7 +19,7 @@
         image:
       </div>
       <div class="item input">
-        <input (click)="alert2='true'" type="text"  formControlName="image" pattern="(www|http:|https:)+[^\s]+[\w]*"/>
+        <input (click)="alert2='true'" type="text" placeholder="Url" formControlName="image" pattern="(www|http:|https:)+[^\s]+[\w]*"/>
         <div *ngIf="alert2=='true'">
           <div  class="alert" *ngIf="this.form.get('image')?.invalid">{{alert+" image"}}</div>
         </div>
@@ -56,4 +56,5 @@
             მულტისაჭე: <input type="checkbox"  formControlName="multisache"/>
           </div>
     <h3 class="item input"></h3>
-    <button (click)="bt()">Add Car</button>
+    <button (click)="bt(); alert2='false';alert1='false'">Add Car</button>
+    <button type="reset" (click)="alert2='false';alert1='false'">Clear</button>

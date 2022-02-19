@@ -16,7 +16,7 @@
                 describtion:
               </div>
               <div class="item input">
-                <input (click)="alert1='true'" type="text"  formControlName="describtion" pattern="[a-zA-Z ]*" />
+                <input (click)="alert1='true'" type="text" placeholder="describtion"  formControlName="describtion" pattern="[a-zA-Z ]*" />
               <div *ngIf="alert1=='true'">
                 <div class="alert" *ngIf="this.form.get('describtion')?.invalid">{{alert+" describtion"}}</div>
               </div>
@@ -25,7 +25,7 @@
                 Image:
               </div>
               <div class="item input">
-                <input (click)="alert2='true'" type="text"  formControlName="image" pattern="(www|http:|https:)+[^\s]+[\w]*"/>
+                <input (click)="alert2='true'" type="text" placeholder="Url"  formControlName="image" pattern="(www|http:|https:)+[^\s]+[\w]*"/>
                 <div *ngIf="alert2=='true'">
                   <div  class="alert" *ngIf="this.form.get('image')?.invalid">{{alert+" image"}}</div>
                 </div>
@@ -49,6 +49,7 @@
               
             <h3 class="item input"></h3>
           <button (click)="u(e.id)">Save</button>
+          <button type="reset" (click)="alert2='false';alert1='false'">Clear</button>
           <button (click)="current='cancle'">Cancle</button>
           </form>
           </div>
@@ -66,8 +67,8 @@
       {{"ნავიგაცია: "+e.navigacia+";  "}} <br>
       {{"ბორდკომპიუტერი: "+e.bort+";  "}} <br>
       {{"მულტისაჭე: "+e.multisache+";  "}} <br>
-      <button (click)="r(e.id)">Remove</button>
-      <button  (click)="condintion(k)">Update</button>
+      <button class="remove" (click)="r(e.id)">Remove</button>
+      <button class="upd" (click)="condintion(k)">Update</button>
     </li>
     
     

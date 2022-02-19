@@ -119,6 +119,36 @@
       "bort": "",
       "multisache": true,
       "id": 9
+    },
+    {
+      "cars": "Audi",
+      "describtion": "good",
+      "image": "www.google.com",
+      "abs": true,
+      "shusha": "",
+      "luqi": "",
+      "bluetooth": true,
+      "signalizacia": "",
+      "parkingkontroli": true,
+      "navigacia": "",
+      "bort": true,
+      "multisache": "",
+      "id": 10
+    },
+    {
+      "cars": "Audi",
+      "describtion": "bad",
+      "image": "www.goodcarimage.com",
+      "abs": true,
+      "shusha": "",
+      "luqi": "",
+      "bluetooth": true,
+      "signalizacia": "",
+      "parkingkontroli": "",
+      "navigacia": true,
+      "bort": "",
+      "multisache": true,
+      "id": 11
     }
   ]
 }
