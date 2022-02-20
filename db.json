@@ -2,16 +2,16 @@
   "cars": [
     {
       "cars": "Mercedes",
-      "describtion": "bad",
-      "image": "www.ajkdhlja;fjaklfhajkslfhjhgafaklflalfjjhfhklakl;gjbjfJBKFNJKKLSGBJKFJKLngvklnkl;jfk;lF.COM",
+      "describtion": "good",
+      "image": "www.google.com",
       "abs": true,
-      "shusha": "",
-      "luqi": "",
-      "bluetooth": "",
+      "shusha": true,
+      "luqi": true,
+      "bluetooth": true,
       "signalizacia": true,
       "parkingkontroli": true,
-      "navigacia": "",
-      "bort": "",
+      "navigacia": true,
+      "bort": true,
       "multisache": true,
       "id": 1
     },
@@ -31,21 +31,6 @@
       "id": 2
     },
     {
-      "cars": "BMW",
-      "describtion": "good",
-      "image": "img",
-      "abs": null,
-      "shusha": null,
-      "luqi": null,
-      "bluetooth": null,
-      "signalizacia": null,
-      "parkingkontroli": null,
-      "navigacia": null,
-      "bort": null,
-      "multisache": true,
-      "id": 3
-    },
-    {
       "cars": "Mercedes",
       "describtion": "good",
       "image": "img",
@@ -59,21 +44,6 @@
       "bort": true,
       "multisache": "",
       "id": 4
-    },
-    {
-      "cars": "Mercedes",
-      "describtion": "good",
-      "image": "img",
-      "abs": true,
-      "shusha": "",
-      "luqi": "",
-      "bluetooth": "",
-      "signalizacia": "",
-      "parkingkontroli": "",
-      "navigacia": true,
-      "bort": "",
-      "multisache": "",
-      "id": 5
     },
     {
       "cars": "BMW",
@@ -119,36 +89,6 @@
       "bort": "",
       "multisache": true,
       "id": 9
-    },
-    {
-      "cars": "Audi",
-      "describtion": "good",
-      "image": "www.google.com",
-      "abs": true,
-      "shusha": "",
-      "luqi": "",
-      "bluetooth": true,
-      "signalizacia": "",
-      "parkingkontroli": true,
-      "navigacia": "",
-      "bort": true,
-      "multisache": "",
-      "id": 10
-    },
-    {
-      "cars": "Audi",
-      "describtion": "bad",
-      "image": "www.goodcarimage.com",
-      "abs": true,
-      "shusha": "",
-      "luqi": "",
-      "bluetooth": true,
-      "signalizacia": "",
-      "parkingkontroli": "",
-      "navigacia": true,
-      "bort": "",
-      "multisache": true,
-      "id": 11
     }
   ]
 }

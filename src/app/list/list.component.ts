@@ -40,6 +40,7 @@ export class ListComponent implements OnInit {
       
   }
   r(id:number){
+    alert("Car with id: "+id+" is Succesfully removed")
     this.cars.remove(id).subscribe()
     window.location.reload();
   }
