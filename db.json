@@ -89,6 +89,21 @@
       "bort": "",
       "multisache": true,
       "id": 9
+    },
+    {
+      "cars": "BMW",
+      "describtion": "good",
+      "image": "https://unsplash.com/s/photos/bmw-cars",
+      "abs": true,
+      "shusha": true,
+      "luqi": true,
+      "bluetooth": true,
+      "signalizacia": true,
+      "parkingkontroli": true,
+      "navigacia": true,
+      "bort": true,
+      "multisache": true,
+      "id": 10
     }
   ]
 }

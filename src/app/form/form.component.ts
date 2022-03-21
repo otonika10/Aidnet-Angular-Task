@@ -17,12 +17,12 @@ export class FormComponent implements OnInit {
   alert1: 'true' | 'false' = 'false'
   alert2: 'true' | 'false' = 'false'
   employees$:any = this.cars.getAll()
-  
+  //test
   productId:number=4;
   
   form = new FormGroup(
     {  
-      cars: new FormControl('',Validators.required),
+      cars: new FormControl('',Validators.required ),
       describtion: new FormControl('',Validators.required),
       image: new FormControl('',Validators.required),
       abs: new FormControl(''),
@@ -35,7 +35,7 @@ export class FormComponent implements OnInit {
       bort: new FormControl(''),
       multisache: new FormControl(''),
     }
-  )
+  ) 
   bt(){
 /*       console.log("success")
       this.emp.create(this.form.value)
